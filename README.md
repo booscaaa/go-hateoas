@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Go Paginate - Go package to generate query pagination</h1>
+  <h1 align="center">Go Hateoas - Package to generate hateoas level to structs in go</h1>
   <p align="center">
     <a href="https://pkg.go.dev/github.com/booscaaa/go-hateoas"><img alt="Reference" src="https://img.shields.io/badge/go-reference-purple?style=for-the-badge"></a>
     <a href="https://github.com/booscaaa/go-hateoas/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/booscaaa/go-hateoas.svg?style=for-the-badge"></a>
