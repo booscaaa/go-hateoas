@@ -58,6 +58,54 @@ mockStruct := struct {
 hateoas.Generate(&mockStruct, "vehicle", "http://localhost:3000")
 ```
 
+The output:
+
+```js
+{
+    "ID": 10,
+    "Make": "Ford",
+    "Model": "Taurus",
+    "Mileage": 200000,
+    "_links": [
+        {
+            "href": "http://localhost:3000/vehicle",
+            "method": "POST",
+            "doc": "http://localhost:3000/doc/index.html#/vehicle/post_vehicle",
+            "key": "new"
+        },
+        {
+            "href": "http://localhost:3000/vehicle/11",
+            "method": "GET",
+            "doc": "http://localhost:3000/doc/index.html#/vehicle/get_vehicle",
+            "key": "next"
+        },
+        {
+            "href": "http://localhost:3000/vehicle/9",
+            "method": "GET",
+            "doc": "http://localhost:3000/doc/index.html#/vehicle/get_vehicle",
+            "key": "prev"
+        }
+    ],
+    "_embeded": [
+        {
+            "href": "http://localhost:3000/vehicle/10",
+            "method": "GET",
+            "doc": "http://localhost:3000/doc/index.html#/vehicle/get_vehicle"
+        },
+        {
+            "href": "http://localhost:3000/vehicle/10",
+            "method": "PUT",
+            "doc": "http://localhost:3000/doc/index.html#/vehicle/put_vehicle__id_"
+        },
+        {
+            "href": "http://localhost:3000/vehicle/10",
+            "method": "DELETE",
+            "doc": "http://localhost:3000/doc/index.html#/vehicle/delete_vehicle__id_"
+        }
+    ]
+}
+```
+
 ## Contributing
 
 You can send how many PR's do you want, I'll be glad to analyze and accept them! And if you have any question about the project...
